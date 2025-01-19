@@ -1,6 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipLease.Api", "EquipLease.Api\EquipLease.Api.csproj", "{F49EF1CE-0E65-4F82-AB7A-DEC098394F19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipLease.Api", "src\EquipLease.Api\EquipLease.Api.csproj", "{F49EF1CE-0E65-4F82-AB7A-DEC098394F19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D3B02042-4431-4A10-9B47-91503F4821C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipLease.Core", "src\EquipLease.Core\EquipLease.Core.csproj", "{3782877C-95F5-4674-BD66-770A31C7B448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipLease.Infrastructure", "src\EquipLease.Infrastructure\EquipLease.Infrastructure.csproj", "{D6F36F09-E463-45EE-BCC0-4FA3BCF09EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipLease.UnitTests", "src\EquipLease.UnitTests\EquipLease.UnitTests.csproj", "{7428F5FC-6E34-40F0-924C-E7A8DB97FC7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +20,23 @@ Global
 		{F49EF1CE-0E65-4F82-AB7A-DEC098394F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F49EF1CE-0E65-4F82-AB7A-DEC098394F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F49EF1CE-0E65-4F82-AB7A-DEC098394F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3782877C-95F5-4674-BD66-770A31C7B448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3782877C-95F5-4674-BD66-770A31C7B448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3782877C-95F5-4674-BD66-770A31C7B448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3782877C-95F5-4674-BD66-770A31C7B448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F36F09-E463-45EE-BCC0-4FA3BCF09EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F36F09-E463-45EE-BCC0-4FA3BCF09EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F36F09-E463-45EE-BCC0-4FA3BCF09EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F36F09-E463-45EE-BCC0-4FA3BCF09EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7428F5FC-6E34-40F0-924C-E7A8DB97FC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7428F5FC-6E34-40F0-924C-E7A8DB97FC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7428F5FC-6E34-40F0-924C-E7A8DB97FC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7428F5FC-6E34-40F0-924C-E7A8DB97FC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F49EF1CE-0E65-4F82-AB7A-DEC098394F19} = {D3B02042-4431-4A10-9B47-91503F4821C3}
+		{3782877C-95F5-4674-BD66-770A31C7B448} = {D3B02042-4431-4A10-9B47-91503F4821C3}
+		{D6F36F09-E463-45EE-BCC0-4FA3BCF09EA3} = {D3B02042-4431-4A10-9B47-91503F4821C3}
+		{7428F5FC-6E34-40F0-924C-E7A8DB97FC7C} = {D3B02042-4431-4A10-9B47-91503F4821C3}
 	EndGlobalSection
 EndGlobal
