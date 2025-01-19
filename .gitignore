@@ -263,3 +263,6 @@ $tf/
 # System files
 *.DS_Store
 *.Thumbs.db
+
+# MS SQL Server files
+mssql-data/*
