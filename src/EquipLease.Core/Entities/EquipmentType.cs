@@ -2,7 +2,6 @@ namespace EquipLease.Core.Entities;
 
 public class EquipmentType
 {
-    public Guid Id { get; private set; }
     public string Code { get; private set; }
     public string Name { get; private set; }
     public int AreaPerUnit { get; private set; }

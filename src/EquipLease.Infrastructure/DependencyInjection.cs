@@ -1,4 +1,6 @@
 using EquipLease.Core.Constants;
+using EquipLease.Infrastructure.Interfaces;
+using EquipLease.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,5 +22,7 @@ public static class DependencyInjection
         {
             options.UseSqlServer(connectionString);
         });
+
+        services.AddScoped<IPlacementContractService, PlacementContractService>();
     }
 }
