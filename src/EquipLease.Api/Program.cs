@@ -1,7 +1,11 @@
+using EquipLease.Core.Constants;
 using EquipLease.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var hostingUrl = builder.Configuration[AppSettingsConstants.WebHostUrl];
+builder.WebHost.UseUrls(hostingUrl ?? throw new ArgumentNullException(nameof(hostingUrl), "Hosting URL is not configured."));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

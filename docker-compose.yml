@@ -1,4 +1,16 @@
 services:
+  equip-lease:
+    container_name: equip-lease
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    ports:
+      - "5242:5242"
+    environment:
+      DatabaseConnectionString: "Data Source=mssql;Initial Catalog=EquipLeaseDb;User id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=true;"
+    depends_on:
+      - mssql
+  
   mssql:
     container_name: sql-server
 #    image: mcr.microsoft.com/mssql/server:2022-latest

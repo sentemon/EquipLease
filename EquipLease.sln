@@ -3,6 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipLease.Api", "src\EquipLease.Api\EquipLease.Api.csproj", "{F49EF1CE-0E65-4F82-AB7A-DEC098394F19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D3B02042-4431-4A10-9B47-91503F4821C3}"
+	ProjectSection(SolutionItems) = preProject
+		src\Dockerfile = src\Dockerfile
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipLease.Core", "src\EquipLease.Core\EquipLease.Core.csproj", "{3782877C-95F5-4674-BD66-770A31C7B448}"
 EndProject
