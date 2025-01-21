@@ -23,8 +23,9 @@ Follow these steps to set up and run the project locally using Docker Compose:
    ```
 
 3. **Access the Service**:
-    - API: `http://localhost:5242`
-    - Swagger documentation: `http://localhost:5242/swagger/index.html`
+   - API_KEY: `secret_api_key`
+   - API: `http://localhost:5242`
+   - Swagger documentation: `http://localhost:5242/swagger/index.html`
 
 ## Project Description
 
