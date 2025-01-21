@@ -9,7 +9,9 @@ public class PlacementContract
     public ProductionFacility ProductionFacility { get; private set; }
     public EquipmentType EquipmentType { get; private set; }
 
+#pragma warning disable CS8618 // Empty constructor for EF Core
     private PlacementContract() { }
+#pragma warning disable CS8618
 
     private PlacementContract(string productionFacilityCode, string equipmentTypeCode, int equipmentQuantity)
     {
