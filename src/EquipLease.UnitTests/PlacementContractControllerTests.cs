@@ -19,7 +19,6 @@ public class PlacementContractControllerIntegrationTests
 
     public PlacementContractControllerIntegrationTests()
     {
-        // Настройка InMemoryDatabase
         var options = new DbContextOptionsBuilder<AppDbContext>()
             .UseInMemoryDatabase(databaseName: "TestDatabase")
             .Options;
@@ -70,7 +69,6 @@ public class PlacementContractControllerIntegrationTests
         newContract?.EquipmentTypeName.Should().Be("Type B");
         newContract?.EquipmentQuantity.Should().Be(5);
 
-        // Проверка базы данных
         var contracts = await _context.PlacementContracts.ToListAsync();
         contracts.Should().HaveCount(3);
     }
